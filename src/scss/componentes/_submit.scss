@@ -1,0 +1,28 @@
+@use "../abstract" as core;
+
+@mixin submit {
+    padding: 1.2rem 2.5rem;
+    border: 0.15rem solid core.color(accent);
+    border-radius: 0.6rem;
+    background: linear-gradient(135deg, core.color(accent), core.color(tertiary));
+    color: core.color(dark);
+    font-family: core.$font-title;
+    font-size: core.font-size(m);
+    font-weight: core.font-weight("bold");
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(core.color(accent), 0.3);
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 0.8rem 2rem rgba(core.color(accent), 0.5);
+        background: linear-gradient(135deg, core.color(primary), core.color(accent));
+    }       
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 0.2rem 0.5rem core.color(accent);
+    }
+}

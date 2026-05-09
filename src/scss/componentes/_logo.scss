@@ -2,6 +2,11 @@
 
 .logo-img{
     width: 60%;
+    &:hover{
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            filter: drop-shadow(0 0 1rem core.color(accent))
+    }
 }
 .logo{
     @include core.center;

@@ -14,6 +14,9 @@
           class="header__logo--img"
         />
       </div>
+      <div class="header__title">
+        <h1 class="header__title--text">2XFight</h1>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav--list">
           <li class="header__nav--item">
@@ -411,41 +414,47 @@
         <div class="contacto__title">
           <h2 class="contacto__title--text">Contacto</h2>
         </div>
-        <form class="contacto__form">
-          <div class="contacto__form__group">
-            <label for="name" class="contacto__form__group--label"
-              >Nombre:</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="contacto__form__group--input"
-            />
-          </div>
-          <div class="contacto__form__group">
-            <label for="email" class="contacto__form__group--label"
-              >Email:</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="contacto__form__group--input"
-            />
-          </div>
-          <div class="contacto__form__group">
-            <label for="message" class="contacto__form__group--label"
-              >Mensaje:</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              class="contacto__form__group--textarea"
-            ></textarea>
-          </div>
-          <button type="submit" class="contacto__form--button">Enviar</button>
-        </form>
+        <div class="contacto__body">
+          <p class="contacto__body--text">
+            Si tienes alguna pregunta o sugerencia, no dudes en contactarnos a
+            través del siguiente formulario.
+          </p>
+          <form class="contacto__form">
+            <div class="contacto__form__group">
+              <label for="name" class="contacto__form__group--label"
+                >Nombre:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contacto__form__group--input"
+              />
+            </div>
+            <div class="contacto__form__group">
+              <label for="email" class="contacto__form__group--label"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contacto__form__group--input"
+              />
+            </div>
+            <div class="contacto__form__group">
+              <label for="message" class="contacto__form__group--label"
+                >Mensaje:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="contacto__form__group--textarea"
+              ></textarea>
+            </div>
+            <button type="submit" class="contacto__form--submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
