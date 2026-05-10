@@ -6,7 +6,7 @@
     display: block;
     margin-bottom: 0.8rem;
     font-weight: core.font-weight("bold");
-    color: core.color(accent);
-    text-shadow: 0 0 0.5rem rgba(core.color(dark), 0.3);
     letter-spacing: 0.05rem;
+    width: 100%;
+    max-width: 100%;
 }

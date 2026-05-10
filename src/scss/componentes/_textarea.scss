@@ -1,0 +1,27 @@
+@use "../abstract" as core;
+
+@mixin textarea {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 0.15rem solid core.color(tertiary);
+    border-radius: 0.6rem;
+    background: rgba(core.color(dark), 0.8);
+    color: core.color(text-light);
+    font-family: core.$font-family;
+    font-size: core.font-size(m);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 10rem;
+
+    &:focus {
+        outline: none;
+        border-color: core.color(accent);
+        box-shadow: 0 0 1rem rgba(core.color(accent), 0.4);
+        background: rgba(core.color(dark), 0.95);
+    }
+
+    &::placeholder {
+        color: rgba(core.color(text-light), 0.5);
+    }
+}

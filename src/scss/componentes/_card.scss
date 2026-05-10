@@ -6,10 +6,9 @@
     grid-template-rows: 1fr;
     overflow: hidden;
     border-radius: 1.5rem;
-    background: linear-gradient(180deg, rgba(core.color(dark), 0.6), rgba(core.color(background), 0.9));
+    background: linear-gradient(180deg,core.color(dark),core.color(background));
     border: 0.1rem solid rgba(core.color(primary), 0.15);
     box-shadow: 0 1rem 2.5rem rgba(core.color(dark), 0.22);
-    cursor: pointer;
     position: relative;
 
     &__img {
