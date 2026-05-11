@@ -1,7 +1,9 @@
 @use "../abstract" as core;
 @mixin icons{
+    @include core.center;
     font-size: core.font-size(xxl);
     & i{
+        @include core.center;
         color: core.color(accent);
         transition: all 0.3s ease-in-out;
         &:hover{
