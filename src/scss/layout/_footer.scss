@@ -7,9 +7,9 @@
     
     &__logo{
         @include comp.logo-img;
-        grid-column: 1/-1;
+        grid-column: 4/-4;
         grid-row: 1/2;
-        @include core.media(medium){
+        @include core.media(large){
             grid-column: 1/2;
             grid-row: 1/2;
         }
@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include core.media(medium){
+        @include core.media(large){
             grid-column: 2/9;
             grid-row: 1/2;
         }
@@ -33,13 +33,13 @@
     }
     &__social{
         grid-column: 1/-1;
-        grid-row: 3/4;
+        grid-row: 4/5;
         @include core.flexposition(row, right, center);
         gap:3rem;
         &--link{
             @include comp.icons;
         }
-        @include core.media(medium){
+        @include core.media(large){
             grid-column: 9/-1;
             grid-row: 1/2;
         }
