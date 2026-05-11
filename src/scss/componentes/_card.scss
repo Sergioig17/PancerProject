@@ -1,6 +1,20 @@
+/// ============================================================================
+/// COMPONENTE CARD - Tarjeta con efecto hover
+/// ============================================================================
+/// Tarjeta con imagen de fondo y contenido superpuesto
+/// que se anima al pasar el mouse
+/// 
+/// @author Sergio
+/// @group Componentes/Card
+/// ============================================================================
+
 @use "../abstract" as core;
 @use "title" as comptitle;
 @use "text" as comptext;
+
+/// Mixin para crear tarjetas animadas
+/// Estructura: imagen de fondo con contenido que sube al hover
+/// @group Componentes/Card
 @mixin card{
     display: grid;
     grid-template-rows: 1fr;

@@ -1,5 +1,21 @@
+/// ============================================================================
+/// COMPONENTE SUBMIT - Botón de envío
+/// ============================================================================
+/// Botón principal para formularios con efectos hover y active
+/// Gradiente y sombra dinámica
+/// 
+/// @author Sergio
+/// @group Componentes/Formularios
+/// ============================================================================
+
 @use "../abstract" as core;
 
+/// Mixin para botón de envío/acción
+/// - Gradiente dinámico
+/// - Efecto elevación en hover (translateY)
+/// - Sombra aumentada en hover
+/// - Efecto presionado en active
+/// @group Componentes/Formularios
 @mixin submit {
     padding: 1.2rem 2.5rem;
     border: 0.15rem solid core.color(accent);

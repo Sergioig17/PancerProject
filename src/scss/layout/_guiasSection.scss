@@ -1,3 +1,20 @@
+/// ============================================================================
+/// LAYOUT - GUÍAS SECTION (Sección de Guías)
+/// ============================================================================
+/// Sección que muestra guías o artículos con:
+/// - Título principal
+/// - Descripción introductoria
+/// - Grid de tarjetas (cards) responsivo
+/// 
+/// Características:
+/// - Auto-fit de tarjetas
+/// - Efecto hover en imágenes (escala)
+/// - Efecto hover en contenido (elevación)
+/// 
+/// @author Sergio
+/// @group Layout/Guias
+/// ============================================================================
+
 @use "../abstract" as core;
 @use "../componentes" as comp;
 .guias {

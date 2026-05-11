@@ -1,3 +1,19 @@
+/// ============================================================================
+/// LAYOUT - HERO SECTION (Sección Principal)
+/// ============================================================================
+/// Sección de bienvenida con:
+/// - Fondo con animación de panorama (heroPan)
+/// - Título principal
+/// - Descripción de contenido
+/// 
+/// Includes:
+/// - Animación de scroll lateral infinito
+/// - Contenido centrado con efecto blur
+/// 
+/// @author Sergio
+/// @group Layout/Hero
+/// ============================================================================
+
 @use "../abstract" as core;
 @use "../componentes/_index" as comp;
 .hero {

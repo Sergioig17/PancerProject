@@ -1,3 +1,19 @@
+/// ============================================================================
+/// LAYOUT - FOOTER (Pie de Página)
+/// ============================================================================
+/// Sección inferior del sitio con:
+/// - Logo
+/// - Información de copyright
+/// - Enlaces a redes sociales
+/// 
+/// Estructura responsive:
+/// - Móvil: Elementos apilados
+/// - Desktop: Distribución en fila con logo, texto y redes sociales
+/// 
+/// @author Sergio
+/// @group Layout/Footer
+/// ============================================================================
+
 @use "../abstract" as core;
 @use "../componentes" as comp;
 

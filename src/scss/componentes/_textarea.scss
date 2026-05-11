@@ -1,5 +1,21 @@
+/// ============================================================================
+/// COMPONENTE TEXTAREA - Área de texto
+/// ============================================================================
+/// Estilos para textarea en formularios
+/// Similares a input pero con altura mínima y resize vertical
+/// 
+/// @author Sergio
+/// @group Componentes/Formularios
+/// ============================================================================
+
 @use "../abstract" as core;
 
+/// Mixin para área de texto (textarea)
+/// - Similar a input pero con resize: vertical
+/// - Altura mínima de 10rem
+/// - Fondo oscuro y borde terciario
+/// - Efecto glow en focus
+/// @group Componentes/Formularios
 @mixin textarea {
     width: 100%;
     padding: 1rem 1.2rem;

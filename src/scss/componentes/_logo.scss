@@ -1,5 +1,20 @@
+/// ============================================================================
+/// COMPONENTE LOGO - Estilos para logo
+/// ============================================================================
+/// Define estilos para la imagen del logo con efectos hover
+/// 
+/// @author Sergio
+/// @group Componentes/Logo
+/// ============================================================================
+
 @use "../abstract" as core;
 
+/// Mixin para logo con efectos
+/// - Centrado
+/// - Escala en hover
+/// - Sombra resplandeciente
+/// - Responsive (width 100% en medium)
+/// @group Componentes/Logo
 @mixin logo-img{
     @include core.center;
     width: 40%;

@@ -1,17 +1,32 @@
+/// ============================================================================
+/// RESET - Reset CSS global
+/// ============================================================================
+/// Elimina márgenes, padding y resetea estilos por defecto
+/// 
+/// @author Sergio
+/// @group Base/Reset
+/// ============================================================================
+
+/// Reset universal
+/// - Elimina márgenes y padding
+/// - Aplica box-sizing: border-box
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/// Resetea altura de html y body al 100%
 html, body{
     height: 100%;
     padding: 0%;
 }
 
+/// Resetea estilos de links
 a{
     text-decoration: none;
     color: inherit;
 }
+/// Elimina estilos de lista
 li{
     list-style: none;
 }

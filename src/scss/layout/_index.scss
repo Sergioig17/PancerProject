@@ -1,3 +1,18 @@
+/// ============================================================================
+/// MÓDULO LAYOUT - Secciones y estructuras principales del sitio
+/// ============================================================================
+/// Contiene los estilos para:
+/// - Header (cabecera con navegación)
+/// - Hero Section (sección principal)
+/// - Historia Section
+/// - Guías Section (sección de guías/tarjetas)
+/// - Contacto Section (formulario)
+/// - Footer (pie de página)
+/// 
+/// @author Sergio
+/// @group Layout
+/// ============================================================================
+
 @use "header";
 @use "heroSection";
 @use "historiaSection";

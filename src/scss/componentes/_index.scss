@@ -1,3 +1,18 @@
+/// ============================================================================
+/// MÓDULO COMPONENTES - Componentes reutilizables del proyecto
+/// ============================================================================
+/// Contiene mixins para componentes UI comunes:
+/// - Tarjetas (card)
+/// - Formularios (input, textarea, label, submit)
+/// - Iconos
+/// - Títulos y texto
+/// - Listas e items
+/// - Logo
+/// 
+/// @author Sergio
+/// @group Componentes
+/// ============================================================================
+
 @forward "li";
 @forward "logo";
 @forward "title";

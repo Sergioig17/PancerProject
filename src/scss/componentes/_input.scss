@@ -1,5 +1,21 @@
+/// ============================================================================
+/// COMPONENTE INPUT - Estilos para campos de entrada
+/// ============================================================================
+/// Define estilos para input[type="text"], input[type="email"], etc.
+/// Incluye estados: normal, focus, placeholder
+/// 
+/// @author Sergio
+/// @group Componentes/Formularios
+/// ============================================================================
+
 @use "../abstract" as core;
 
+/// Mixin para campos de entrada
+/// - Borde con color terciario
+/// - Fondo oscuro con transparencia
+/// - Efecto glow en focus
+/// - Placeholder personalizado
+/// @group Componentes/Formularios
 @mixin input {
     width: 100%;
     padding: 1rem 1.2rem;

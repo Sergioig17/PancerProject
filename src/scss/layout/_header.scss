@@ -1,3 +1,19 @@
+/// ============================================================================
+/// LAYOUT - HEADER (Cabecera)
+/// ============================================================================
+/// Sección superior del sitio con:
+/// - Logo
+/// - Título principal
+/// - Navegación
+/// 
+/// Estructura responsive:
+/// - Móvil: Logo, Título, Navegación en columna
+/// - Desktop: Logo izq, Título centro, Navegación derecha
+/// 
+/// @author Sergio
+/// @group Layout/Header
+/// ============================================================================
+
 @use "../componentes" as comp;
 @use "../abstract" as core;
 .header{

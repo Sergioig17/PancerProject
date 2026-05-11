@@ -1,4 +1,20 @@
+/// ============================================================================
+/// COMPONENTE TITLE - Títulos principales
+/// ============================================================================
+/// Estilos para títulos con efectos visuales (sombra, línea decorativa)
+/// 
+/// @author Sergio
+/// @group Componentes/Tipografía
+/// ============================================================================
+
 @use "../abstract" as core;
+
+/// Mixin para títulos
+/// - Centrado
+/// - Tipografía de cabecera dinámica
+/// - Sombra de texto
+/// - Línea decorativa con gradiente en la base
+/// @group Componentes/Tipografía
 @mixin title{
     @include core.center;
     @include core.cabeceras;

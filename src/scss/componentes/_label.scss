@@ -1,6 +1,20 @@
+/// ============================================================================
+/// COMPONENTE LABEL - Etiquetas de formulario
+/// ============================================================================
+/// Estilos para etiquetas de campos de formulario
+/// 
+/// @author Sergio
+/// @group Componentes/Formularios
+/// ============================================================================
+
 @use "../abstract" as core;
 @use "./text" as text;
 
+/// Mixin para labels de formulario
+/// - Hereda estilos de texto
+/// - Bold con letter-spacing
+/// - Ancho completo
+/// @group Componentes/Formularios
 @mixin label {
     @include text.text;
     display: block;

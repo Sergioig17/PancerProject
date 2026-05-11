@@ -1,3 +1,15 @@
+/// ============================================================================
+/// MÓDULO ABSTRACT - Configuración centralizada del proyecto
+/// ============================================================================
+/// Este módulo contiene:
+/// - Mixins reutilizables para layouts, flexbox, media queries, etc.
+/// - Variables globales (colores, tipografía, tamaños)
+/// - Funciones helper para acceder a valores de mapas
+/// 
+/// @author Sergio
+/// @group Abstract
+/// ============================================================================
+
 @forward "./mixin";
 @forward "./variables";
 @use "./mixin";

@@ -1,8 +1,19 @@
+/// ============================================================================
+/// MIXINS - Utilidades reutilizables para diseño
+/// ============================================================================
+/// @author Sergio
+/// @group Abstract/Mixins
+/// ============================================================================
+
 @use "sass:map";
 @use "sass:color";
 @use "variables" as vars;
 
-
+/// Centra contenido usando flexbox
+/// Aplica display: flex con justify-content y align-items en center
+/// @group Mixins/Layout
+/// @example
+///   .container { @include center; }
 @mixin center {
     display: flex;
     justify-content: center;
@@ -11,12 +22,20 @@
 
 /// Aplica un borde sólido y un radio de esquina estándar
 /// @group Estilos Base
+/// Aplica estilo de borde con radio personalizado
+/// Borde sólido con border-radius de 2.5rem
+/// @group Mixins/Estilos
+/// @output border: 0.5rem solid color(primary), border-radius: 2.5rem
 @mixin border_radius {
     border: 0.5rem solid vars.color(primary);
     border-radius: 2.5rem;
 }
 
 /// Mixin MQ
+/// Puntos de quiebre responsive (breakpoints)
+/// Define tamaños de pantalla para media queries
+/// @type Map
+/// @group Mixins/Responsive
 $sizes:(
     small:576px,
     medium:768px,
@@ -25,6 +44,12 @@ $sizes:(
     xxlarge:1400px
 );
 
+/// Media query helper para responsive design
+/// Facilita la aplicación de estilos en diferentes tamaños de pantalla
+/// @group Mixins/Responsive
+/// @param {String} $clave - Clave del breakpoint (small, medium, large, xlarge, xxlarge)
+/// @example
+///   .element { @include media(medium) { width: 100%; } }
 @mixin media ($clave){
   $size:map.get($sizes, $clave);  
     @media screen and (min-width: $size) {
@@ -33,6 +58,14 @@ $sizes:(
  
 }
 
+/// Posicionamiento flexible con flexbox personalizado
+/// Combina display flex con propiedades de dirección y alineación
+/// @group Mixins/Layout
+/// @param {String} $direction [row] - Dirección del flex (row, column, row-reverse, column-reverse)
+/// @param {String} $justifycontent [center] - Alineación horizontal (flex-start, center, flex-end, space-around, space-between)
+/// @param {String} $alignitem [center] - Alineación vertical (flex-start, center, flex-end, stretch)
+/// @example
+///   .flex-container { @include flexposition(column, space-between, flex-start); }
 @mixin flexposition($direction: row, $justifycontent: center, $alignitem: center) {
     display: flex;
     flex-direction: $direction;
@@ -40,6 +73,11 @@ $sizes:(
     align-items: $alignitem;
 }
 
+/// Layout base del sitio con grid
+/// Define la estructura principal con grid de 9 columnas
+/// Usado en header, footer y secciones principales
+/// @group Mixins/Layout
+/// @output grid: 9 columnas, 3 filas, gap 2rem
 @mixin layout_basico(){
     display: grid;
     grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
@@ -63,7 +101,9 @@ $sizes:(
     gap: $gap;
 }
 
-/* Menú Navegación */
+/// Estilos para navegación
+/// Define estructura y estilos para menús de navegación
+/// @group Mixins/Navegación
 @mixin navigation() {
     &--list {
         @include flexposition(row, space-around);
@@ -80,7 +120,9 @@ $sizes:(
     }
 }
 
-/* Cabeceras dinámicas */
+/// Estilos dinámicos para encabezados (h1, h2, h3)
+/// Aplica tipografía consistente a todas las cabeceras
+/// @group Mixins/Tipografía
 @mixin cabeceras {
     @for $i from 1 through 3 {
         h#{$i} {

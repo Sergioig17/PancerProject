@@ -1,3 +1,21 @@
+/// ============================================================================
+/// LAYOUT - CONTACTO SECTION (Sección de Contacto)
+/// ============================================================================
+/// Sección con formulario de contacto que incluye:
+/// - Título
+/// - Descripción
+/// - Formulario con campos:
+///   * Inputs de texto
+///   * Textarea para mensajes
+///   * Select dropdown
+///   * Botón submit
+/// 
+/// Estructura responsive con media queries
+/// 
+/// @author Sergio
+/// @group Layout/Contacto
+/// ============================================================================
+
 @use "../abstract" as core;
 @use "../componentes" as comp;
 

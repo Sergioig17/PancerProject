@@ -1,9 +1,27 @@
+/// ============================================================================
+/// ESTILOS BASE - Estilos fundamentales para elementos HTML
+/// ============================================================================
+/// Define estilos por defecto para:
+/// - html y body
+/// - Encabezados (h1-h6)
+/// - Párrafos
+/// - Imágenes
+/// 
+/// @author Sergio
+/// @group Base/Estilos
+/// ============================================================================
+
 @use "../abstract" as core;
 
+/// Tamaño base de fuente para el proyecto (10px = 1rem)
 html {
     font-size: 62.5%;
 }
 
+/// Estilos base para el cuerpo
+/// - Tipografía global
+/// - Fondo de pantalla
+/// - Layout flexible
 body {
     font-family: core.$font-family;
     background-color: core.color(background);
@@ -15,6 +33,8 @@ body {
 }
 
 
+/// Encabezado H1 - Principal
+/// Tamaño XXL, bold, color light
 h1 {
     font-size: core.font-size(xxl);
     font-weight: bold;
@@ -22,6 +42,8 @@ h1 {
     color: core.color(light);
 }
 
+/// Encabezado H2 - Secundario
+/// Tamaño XL, bold, color light
 h2 {
     font-size: core.font-size(xl);
     font-weight: bold;
@@ -29,6 +51,8 @@ h2 {
     color: core.color(light);
 }
 
+/// Encabezado H3 - Terciario
+/// Tamaño L, bold, color primary
 h3 {
     font-size: core.font-size(l);
     font-weight: bold;
@@ -36,16 +60,22 @@ h3 {
     color: core.color(primary);
 }
 
+/// Encabezados H4, H5, H6 - Menores
+/// Tamaño M, bold
 h4, h5, h6 {
     font-size: core.font-size(m);
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
+/// Párrafos
+/// Espaciado uniforme y legibilidad
 p {
     margin-bottom: 1rem;
 }
 
+/// Imágenes
+/// Responsive y redondeadas
 img {
     max-width: 100%;
     height: auto;

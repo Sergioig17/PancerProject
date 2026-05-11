@@ -1,4 +1,21 @@
+/// ============================================================================
+/// COMPONENTE LI - Elementos de lista
+/// ============================================================================
+/// Estilos para elementos de lista con efectos hover
+/// Incluye línea animada y brillo
+/// 
+/// @author Sergio
+/// @group Componentes/Listas
+/// ============================================================================
+
 @use "../abstract" as core;
+
+/// Mixin para items de lista
+/// - Posicionamiento relativo para pseudo-elementos
+/// - Línea underline animada en hover
+/// - Efecto brillo con text-shadow
+/// - Responsive con cambios de ancho en media queries
+/// @group Componentes/Listas
 @mixin li{
     font-size: core.font-size(l);    
     position: relative;

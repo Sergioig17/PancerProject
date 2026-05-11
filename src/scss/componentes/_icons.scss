@@ -1,4 +1,19 @@
+/// ============================================================================
+/// COMPONENTE ICONS - Estilos para iconos
+/// ============================================================================
+/// Aplica estilos a iconos con efectos hover (escala y sombra)
+/// 
+/// @author Sergio
+/// @group Componentes/Icons
+/// ============================================================================
+
 @use "../abstract" as core;
+
+/// Mixin para iconos interactivos
+/// - Centrado
+/// - Efecto scale al hover
+/// - Sombra resplandeciente
+/// @group Componentes/Icons
 @mixin icons{
     @include core.center;
     font-size: core.font-size(xxl);
